@@ -1,13 +1,13 @@
 import './styles.css';
 import { homePage } from './home';
+import { menuPage } from './menu';
 
 homePage();
 
-/* 
-(function load() {
+(function loader() {
 	const homeButton = document.querySelector('.home');
+	const menuButton = document.querySelector('.menu');
+	const contactButton = document.querySelector('.contact');
 
-	homePage();
-
-	homeButton.addEventListener('click', homePage);
-})(); */
+	menuButton.addEventListener('click', menuPage);
+})();
