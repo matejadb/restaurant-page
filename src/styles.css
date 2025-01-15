@@ -4,8 +4,17 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--font-restaurant-name: normal 700 2.5rem/1 'Kanit', serif;
+	--font-paragraph: normal 300 1rem/1.5 'Kanit', serif;
+	--font-small-title: normal 600 1.5rem/1 'Kanit', serif;
+	--font-nav-btn: normal 400 20px/0 'Kanit', serif;
+	--main-bg-color: #e3f6f5;
+	--nav-bg-color: #272643;
+}
+
 body {
-	background-color: #e3f6f5;
+	background-color: var(--main-bg-color);
 }
 
 /* Nav bar */
@@ -14,7 +23,7 @@ header {
 	height: 10vh;
 	display: flex;
 	align-items: center;
-	background-color: #272643;
+	background-color: var(--nav-bg-color);
 }
 
 nav {
@@ -31,9 +40,7 @@ nav button {
 	border: none;
 	font-size: 20px;
 	border-radius: 20px;
-	font-family: 'Kanit', serif;
-	font-weight: 400;
-	font-style: normal;
+	font: var(--font-nav-btn);
 }
 
 nav button:hover {
@@ -48,54 +55,8 @@ nav button:hover {
 
 /* Repeated Code */
 
-/* Home Page */
-
-.restaurant-name {
-	font-family: 'Kanit', serif;
-	font-weight: 700;
-	font-style: normal;
-}
-
-.description {
-	font-family: 'Kanit', serif;
-	font-weight: 400;
-	font-style: normal;
-	background-color: #ffffff;
-	border-radius: 25px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 30px;
-	margin-bottom: 50px;
-	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
-	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
-}
-
-h2 {
-	font-family: 'Kanit', serif;
-	font-weight: 600;
-	font-style: normal;
-}
-
-.work-hours {
-	background-color: #ffffff;
-	border-radius: 25px;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 30px;
-	margin-bottom: 50px;
-	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
-	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
-}
-
-.hours {
-	font-family: 'Kanit', serif;
-	font-weight: 300;
-	font-style: normal;
-	text-align: center;
-}
-
+.description,
+.work-hours,
 .location {
 	background-color: #ffffff;
 	border-radius: 25px;
@@ -106,13 +67,21 @@ h2 {
 	margin-bottom: 50px;
 	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
 	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+	font: var(--font-paragraph);
+}
+.hours,
+.location div {
+	text-align: center;
 }
 
-.location div {
-	font-family: 'Kanit', serif;
-	font-weight: 300;
-	font-style: normal;
-	text-align: center;
+/* Home Page */
+
+.restaurant-name {
+	font: var(--font-restaurant-name);
+}
+
+h2 {
+	font: var(--font-small-title);
 }
 
 /* Menu Page */
