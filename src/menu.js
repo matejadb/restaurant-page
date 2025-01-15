@@ -49,10 +49,12 @@ export function menuPage() {
 
 		const itemDesc = document.createElement('p');
 		itemDesc.textContent = item.description;
+
 		itemDiv.appendChild(itemDesc);
 
 		const itemPrice = document.createElement('p');
 		itemPrice.textContent = item.price;
+		itemPrice.classList.add('price');
 		itemDiv.appendChild(itemPrice);
 
 		const itemImg = document.createElement('img');
@@ -106,6 +108,8 @@ export function menuPage() {
 
 		const itemPrice = document.createElement('p');
 		itemPrice.textContent = item.price;
+		itemPrice.textContent = item.price;
+		itemPrice.classList.add('price');
 		itemDiv.appendChild(itemPrice);
 
 		const itemImg = document.createElement('img');
