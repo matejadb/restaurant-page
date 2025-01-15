@@ -5,9 +5,10 @@
 }
 
 :root {
-	--font-restaurant-name: normal 700 2.5rem/1 'Kanit', serif;
+	--font-large-title: normal 700 2.5rem/1 'Kanit', serif;
 	--font-paragraph: normal 300 1rem/1.5 'Kanit', serif;
-	--font-small-title: normal 600 1.5rem/1 'Kanit', serif;
+	--font-medium-title: normal 600 1.5rem/1 'Kanit', serif;
+	--font-small-title: normal 500 1.2rem/1 'Kanit', serif;
 	--font-nav-btn: normal 400 20px/0 'Kanit', serif;
 	--main-bg-color: #e3f6f5;
 	--nav-bg-color: #272643;
@@ -57,7 +58,8 @@ nav button:hover {
 
 .description,
 .work-hours,
-.location {
+.location,
+.contact-item {
 	background-color: #ffffff;
 	border-radius: 25px;
 	display: flex;
@@ -74,16 +76,25 @@ nav button:hover {
 	text-align: center;
 }
 
-/* Home Page */
-
-.restaurant-name {
-	font: var(--font-restaurant-name);
+.restaurant-name,
+.contact h1 {
+	font: var(--font-large-title);
 }
 
 h2 {
+	font: var(--font-medium-title);
+}
+
+h3 {
 	font: var(--font-small-title);
 }
+
+/* Home Page */
 
 /* Menu Page */
 
 /* Contact Page */
+
+.contact h1 {
+	margin-bottom: 30px;
+}
