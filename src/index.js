@@ -1,9 +1,10 @@
 import './styles.css';
 import { homePage } from './home';
 import { menuPage } from './menu';
+import { contactPage } from './contact';
 
 homePage();
-console.log('test');
+
 (function loader() {
 	const homeButton = document.querySelector('.home');
 	const menuButton = document.querySelector('.menu');
@@ -11,4 +12,5 @@ console.log('test');
 
 	menuButton.addEventListener('click', menuPage);
 	homeButton.addEventListener('click', homePage);
+	contactButton.addEventListener('click', contactPage);
 })();
