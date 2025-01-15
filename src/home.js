@@ -1,6 +1,7 @@
 export function homePage() {
 	document.title = 'Restaurant Page | Home';
 	const content = document.querySelector('#content');
+	content.textContent = '';
 
 	const restaurantName = document.createElement('h1');
 	restaurantName.classList.add('restaurant-name');
