@@ -12,11 +12,11 @@ export function homePage() {
 	const descriptionText = document.createElement('p');
 	descriptionText.textContent =
 		'Since 1980 our restaurant has been serving only the highehst qualityfood. Come check out on your own!';
-	description.appendChild(descriptionText);
+	description.append(restaurantName, descriptionText);
 
 	const workHours = document.createElement('div');
 	workHours.classList.add('work-hours');
-	const hoursTitle = document.createElement('h3');
+	const hoursTitle = document.createElement('h2');
 	hoursTitle.textContent = 'Hours';
 	const hoursDiv = document.createElement('div');
 	hoursDiv.classList.add('hours');
@@ -38,7 +38,7 @@ export function homePage() {
 
 	const location = document.createElement('div');
 	location.classList.add('location');
-	const locationTitle = document.createElement('h3');
+	const locationTitle = document.createElement('h2');
 	locationTitle.textContent = 'Location';
 	const locationDiv = document.createElement('div');
 	const locationP = document.createElement('p');
@@ -46,5 +46,5 @@ export function homePage() {
 	locationDiv.appendChild(locationP);
 	location.append(locationTitle, locationDiv);
 
-	content.append(restaurantName, description, workHours, location);
+	content.append(description, workHours, location);
 }

@@ -1,1 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
+body {
+	background-color: #e3f6f5;
+}
+
+header {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	background-color: #272643;
+}
+
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+nav button {
+	height: 50px;
+	width: 100px;
+	padding: 5px;
+	border: none;
+	font-size: 20px;
+	border-radius: 20px;
+	font-family: 'Kanit', serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+nav button:hover {
+	cursor: pointer;
+}
+
+#content {
+	margin: 15px 30px;
+}
+
+.restaurant-name {
+	font-family: 'Kanit', serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.description {
+	font-family: 'Kanit', serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color: #ffffff;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 30px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+}
+
+h2 {
+	font-family: 'Kanit', serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+.work-hours {
+	background-color: #ffffff;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 30px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+}
+
+.hours {
+	font-family: 'Kanit', serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+}
+
+.location {
+	background-color: #ffffff;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 30px;
+	margin-bottom: 50px;
+	-webkit-box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+	box-shadow: 7px 6px 9px 0px rgba(0, 0, 0, 0.27);
+}
+
+.location div {
+	font-family: 'Kanit', serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+}
